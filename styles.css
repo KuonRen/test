@@ -64,7 +64,9 @@ body {
     align-items: center;
     gap: 10px;
     width: 100%;
-    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto;
+    flex-wrap: nowrap;
 }
 
 .sort-container {
@@ -73,7 +75,9 @@ body {
     align-items: center;
     gap: 10px;
     width: 100%;
+    max-width: 500px;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .search-container input {
@@ -85,9 +89,10 @@ body {
     color: white;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     flex: 1;
+    min-width: 200px;
 }
 
-.search-container button, .sort-container button {
+.search-container button {
     background: linear-gradient(135deg, #777, #444);
     color: white;
     border: none;
@@ -99,7 +104,27 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.search-container button:hover, .sort-container button:hover {
+.search-container button:hover {
+    background: linear-gradient(135deg, #999, #666);
+    transform: scale(1.08);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.sort-container button {
+    background: linear-gradient(135deg, #777, #444);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 300px;
+}
+
+.sort-container button:hover {
     background: linear-gradient(135deg, #999, #666);
     transform: scale(1.08);
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
@@ -132,38 +157,21 @@ body {
 }
 
 @media (max-width: 768px) {
-    .search-section {
-        width: 100%;
-        max-width: 300px;
-    }
     .search-container {
-        flex-direction: column;
-    }
-    .search-container input, .search-container button {
-        width: 100%;
+        flex-wrap: nowrap;
     }
     .sort-container {
         flex-direction: column;
-        width: 100%;
-    }
-    .sort-container button {
-        width: 100%;
+        align-items: center;
     }
 }
 
 @media (max-width: 480px) {
-    .search-section {
-        width: 100%;
-        max-width: 280px;
-    }
-    .search-container input, .search-container button {
-        width: 100%;
+    .search-container {
+        flex-wrap: nowrap;
     }
     .sort-container {
         flex-direction: column;
-        width: 100%;
-    }
-    .sort-container button {
-        width: 100%;
+        align-items: center;
     }
 }
