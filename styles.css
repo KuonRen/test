@@ -115,7 +115,7 @@ body {
     border-radius: 15px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .header {
         font-size: 2rem;
         padding: 12px;
@@ -127,44 +127,16 @@ body {
     .car-item {
         max-width: 250px;
     }
-}
-
-@media (max-width: 768px) {
-    .category-buttons {
+    .search-container, .sort-container {
         flex-direction: column;
-        align-items: center;
-    }
-    .category-buttons button {
         width: 100%;
         max-width: 300px;
-        font-size: 1rem;
-    }
-    .search-container {
-        flex-wrap: nowrap;
     }
     .search-container input {
-        width: auto;
-        flex: 1;
-    }
-    .search-container button {
-        width: auto;
-    }
-    .sort-container {
         width: 100%;
-        max-width: 300px;
     }
-    .sort-container button {
+    .search-container button, .sort-container button {
         width: 100%;
-        max-width: 300px;
-        margin: 5px;
-    }
-    .catalog {
-        flex-direction: column;
-        align-items: center;
-    }
-    .car-item {
-        width: 90%;
-        max-width: 350px;
     }
 }
 
@@ -173,30 +145,22 @@ body {
         font-size: 1.8rem;
         padding: 8px;
     }
-    .search-container {
-        flex-wrap: nowrap;
-    }
-    .search-container input {
-        width: auto;
-        flex: 1;
-    }
-    .search-container button {
-        width: auto;
-    }
-    .sort-container {
-        width: 100%;
-        max-width: 300px;
-    }
-    .sort-container button {
-        width: 100%;
-        max-width: 300px;
-        margin: 5px;
-    }
     .category-buttons button {
         font-size: 0.9rem;
         padding: 8px 14px;
     }
     .car-item {
         max-width: 90%;
+    }
+    .search-container, .sort-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+    }
+    .search-container input {
+        width: 100%;
+    }
+    .search-container button, .sort-container button {
+        width: 100%;
     }
 }
