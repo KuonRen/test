@@ -87,45 +87,18 @@ body {
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
 }
 
-.sort-container {
-    display: flex;
-    justify-content: center; /* 中央揃え */
-    align-items: center;
-    gap: 20px; /* ボタン間の間隔 */
-    padding-bottom: 10px;
-    width: 100%; /* 必要に応じて幅を指定 */
-}
-
-.sort-container button {
-    background: linear-gradient(135deg, #777, #444);
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.sort-container button:hover {
-    background: linear-gradient(135deg, #999, #666);
-    transform: scale(1.05);
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
-}
-
 .catalog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* 中央揃え */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: auto;
 }
 
 .car-item {
     background: linear-gradient(135deg, #222, #111);
     border-radius: 15px;
-    margin: 15px;
     padding: 15px;
     width: 100%;
     max-width: 300px;
@@ -180,16 +153,13 @@ body {
         width: 90%;
         max-width: 400px;
     }
-    .sort-container {
-        gap: 15px; /* ボタン間の間隔を調整 */
-    }
     .catalog {
-        justify-content: center; /* カーアイテムを中央揃え */
-        padding: 15px; /* スペース調整 */
+        grid-template-columns: 1fr;
+        padding: 15px;
     }
     .car-item {
         width: 90%;
-        max-width: 350px; /* アイテムの最大幅を調整 */
-        margin: 15px auto; /* 中央に揃えるために自動マージン */
+        max-width: 350px;
+        margin: 15px auto;
     }
 }
