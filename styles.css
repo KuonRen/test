@@ -89,10 +89,11 @@ body {
 
 .sort-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* 中央揃え */
     align-items: center;
     gap: 10px;
     padding-bottom: 10px;
+    width: 100%; /* 必要に応じて幅を指定 */
 }
 
 .sort-container button {
