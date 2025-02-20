@@ -1,1 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap');
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px;
+    background: linear-gradient(135deg, #555, #222);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #d48fff;
+}
+
+.category-buttons {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-buttons button {
+    background: linear-gradient(135deg, #777, #444);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.category-buttons button:hover {
+    background: linear-gradient(135deg, #999, #666);
+    transform: scale(1.08);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.category-buttons button.active {
+    background: linear-gradient(135deg, rgba(255, 99, 99, 0.5), rgba(255, 0, 0, 0.5));
+    transform: scale(1.08);
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+
+.search-container input {
+    padding: 12px;
+    flex: 1;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #222;
+    color: white;
+}
+
+.search-container button {
+    background: linear-gradient(135deg, #777, #444);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-container button:hover {
+    background: linear-gradient(135deg, #999, #666);
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.sort-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.sort-container button {
+    background: linear-gradient(135deg, #777, #444);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sort-container button:hover {
+    background: linear-gradient(135deg, #999, #666);
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.car-item {
+    background: linear-gradient(135deg, #222, #111);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-item:hover {
+    transform: scale(1.05);
+}
+
+.car-item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.car-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e35d5d;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+}
+
+.car-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    font-weight: 700;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .category-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .category-buttons button {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1rem;
+    }
+    .search-container {
+        width: 90%;
+        max-width: 400px;
+    }
+    .sort-container {
+        width: 90%;
+        max-width: 400px;
+    }
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    }
+    .car-item {
+        width: 90%;
+        max-width: 350px;
+    }
+}
