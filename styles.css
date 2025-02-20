@@ -89,11 +89,11 @@ body {
 
 .sort-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* 中央揃え */
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* ボタン間の間隔 */
     padding-bottom: 10px;
-    width: 100%;
+    width: 100%; /* 必要に応じて幅を指定 */
 }
 
 .sort-container button {
@@ -114,19 +114,21 @@ body {
 }
 
 .catalog {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 中央揃え */
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
 .car-item {
     background: linear-gradient(135deg, #222, #111);
     border-radius: 15px;
+    margin: 15px;
     padding: 15px;
     width: 100%;
+    max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -179,15 +181,15 @@ body {
         max-width: 400px;
     }
     .sort-container {
-        gap: 15px;
+        gap: 15px; /* ボタン間の間隔を調整 */
     }
     .catalog {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        padding: 15px;
+        justify-content: center; /* カーアイテムを中央揃え */
+        padding: 15px; /* スペース調整 */
     }
     .car-item {
-        width: 100%;
-        margin: 15px auto;
+        width: 90%;
+        max-width: 350px; /* アイテムの最大幅を調整 */
+        margin: 15px auto; /* 中央に揃えるために自動マージン */
     }
 }
