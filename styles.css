@@ -26,7 +26,7 @@ body {
     justify-content: center;
 }
 
-.category-buttons button {
+.category-buttons button, .search-container button, .sort-container button {
     background: linear-gradient(135deg, #777, #444);
     color: white;
     border: none;
@@ -38,7 +38,7 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.category-buttons button:hover {
+.category-buttons button:hover, .search-container button:hover, .sort-container button:hover {
     background: linear-gradient(135deg, #999, #666);
     transform: scale(1.08);
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
@@ -56,7 +56,7 @@ body {
     flex-wrap: wrap;
 }
 
-.search-container input, .sort-container button, .search-container button {
+.search-container input {
     padding: 12px;
     border-radius: 8px;
     border: none;
@@ -64,12 +64,6 @@ body {
     background-color: #222;
     color: white;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.search-container button:hover, .sort-container button:hover {
-    background: linear-gradient(135deg, #999, #666);
-    transform: scale(1.05);
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
 }
 
 .catalog {
