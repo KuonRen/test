@@ -123,6 +123,7 @@ body {
     .search-container input, .search-container button, .sort-container button {
         width: 100%;
         max-width: 300px;
+        margin: 5px;
     }
     .catalog {
         flex-direction: column;
@@ -146,6 +147,7 @@ body {
     .search-container input, .search-container button, .sort-container button {
         width: 100%;
         max-width: 300px;
+        margin: 5px;
     }
     .category-buttons button {
         font-size: 0.9rem;
