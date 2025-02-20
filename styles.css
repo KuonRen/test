@@ -27,7 +27,7 @@ body {
 }
 
 .category-buttons button {
-    background: linear-gradient(135deg, #ff5e5e, #d44);
+    background: linear-gradient(135deg, #777, #444);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -39,9 +39,13 @@ body {
 }
 
 .category-buttons button:hover {
-    background: linear-gradient(135deg, #ff7e7e, #f55);
+    background: linear-gradient(135deg, #999, #666);
     transform: scale(1.08);
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.category-buttons button.active {
+    background: linear-gradient(135deg, #ff5e5e, #d44);
 }
 
 .search-container, .sort-container {
