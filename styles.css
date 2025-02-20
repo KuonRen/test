@@ -45,7 +45,7 @@ body {
 }
 
 .category-buttons button.active {
-    background: linear-gradient(135deg, rgba(212, 143, 255, 0.3)));
+    background: linear-gradient(135deg, rgba(212, 143, 255, 0.4));
     transform: scale(1.08);
 }
 
