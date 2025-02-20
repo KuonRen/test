@@ -48,16 +48,32 @@ body {
     background: linear-gradient(135deg, #ff5e5e, #d44);
 }
 
-.search-container, .sort-container {
+.search-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
     width: 90%;
     max-width: 500px;
     margin: 10px auto;
     padding-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
     flex-wrap: wrap;
+}
+
+.sort-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .search-container input {
@@ -116,51 +132,38 @@ body {
 }
 
 @media (max-width: 768px) {
-    .header {
-        font-size: 2rem;
-        padding: 12px;
-    }
-    .category-buttons button {
-        font-size: 0.9rem;
-        padding: 10px 16px;
-    }
-    .car-item {
-        max-width: 250px;
-    }
-    .search-container, .sort-container {
-        flex-direction: column;
+    .search-section {
         width: 100%;
         max-width: 300px;
     }
-    .search-container input {
+    .search-container {
+        flex-direction: column;
+    }
+    .search-container input, .search-container button {
         width: 100%;
     }
-    .search-container button, .sort-container button {
+    .sort-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .sort-container button {
         width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .header {
-        font-size: 1.8rem;
-        padding: 8px;
-    }
-    .category-buttons button {
-        font-size: 0.9rem;
-        padding: 8px 14px;
-    }
-    .car-item {
-        max-width: 90%;
-    }
-    .search-container, .sort-container {
-        flex-direction: column;
+    .search-section {
         width: 100%;
         max-width: 280px;
     }
-    .search-container input {
+    .search-container input, .search-container button {
         width: 100%;
     }
-    .search-container button, .sort-container button {
+    .sort-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .sort-container button {
         width: 100%;
     }
 }
