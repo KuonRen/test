@@ -68,6 +68,7 @@ body {
     background-color: #222;
     color: white;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex: 1;
 }
 
 .search-container button, .sort-container button {
@@ -138,11 +139,21 @@ body {
         max-width: 300px;
         font-size: 1rem;
     }
-    .search-container, .sort-container {
+    .search-container {
+        flex-wrap: nowrap;
+    }
+    .search-container input {
+        width: auto;
+        flex: 1;
+    }
+    .search-container button {
+        width: auto;
+    }
+    .sort-container {
         width: 100%;
         max-width: 300px;
     }
-    .search-container input, .search-container button, .sort-container button {
+    .sort-container button {
         width: 100%;
         max-width: 300px;
         margin: 5px;
@@ -162,11 +173,21 @@ body {
         font-size: 1.8rem;
         padding: 8px;
     }
-    .search-container, .sort-container {
+    .search-container {
+        flex-wrap: nowrap;
+    }
+    .search-container input {
+        width: auto;
+        flex: 1;
+    }
+    .search-container button {
+        width: auto;
+    }
+    .sort-container {
         width: 100%;
         max-width: 300px;
     }
-    .search-container input, .search-container button, .sort-container button {
+    .sort-container button {
         width: 100%;
         max-width: 300px;
         margin: 5px;
