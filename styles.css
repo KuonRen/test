@@ -181,7 +181,6 @@ body {
         max-width: 400px;
     }
     .sort-container {
-        flex-direction: column; /* ボタンを縦に並べる */
         gap: 15px; /* ボタン間の間隔を調整 */
     }
     .catalog {
