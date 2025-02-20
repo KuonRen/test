@@ -1,1 +1,108 @@
-
+{
+  "sports": [
+    {
+      "name": "a",
+      "price": "$0",
+      "image": "example.png"
+    },
+    {
+      "name": "b",
+      "price": "$5,000",
+      "image": "example.png"
+    },
+    {
+      "name": "c",
+      "price": "$2,000",
+      "image": "example.png"
+    },
+    {
+      "name": "D",
+      "price": "$1,000",
+      "image": "example.png"
+    },
+    {
+      "name": "e",
+      "price": "$6,000",
+      "image": "example.png"
+    },
+    {
+      "name": "f",
+      "price": "$7,000",
+      "image": "example.png"
+    },
+    {
+      "name": "g",
+      "price": "$3,000",
+      "image": "example.png"
+    },
+    {
+      "name": "h",
+      "price": "$4,000",
+      "image": "example.png"
+    }
+  ],
+  "super": [
+    {
+      "name": "Zentorno",
+      "price": "$10,000",
+      "image": "z_zentorno.avif"
+    },
+    {
+      "name": "Ignus",
+      "price": "$30,000",
+      "image": "z_ignus.avif"
+    },
+    {
+      "name": "Krieger",
+      "price": "$20,000",
+      "image": "z_krieger.avif"
+    },
+    {
+      "name": "L",
+      "price": "$50,000",
+      "image": "example.png"
+    },
+    {
+      "name": "m",
+      "price": "$60,000",
+      "image": "example.png"
+    },
+    {
+      "name": "n",
+      "price": "$40,000",
+      "image": "example.png"
+    }
+  ],
+  "bike": [
+    {
+      "name": "o",
+      "price": "$400,000",
+      "image": "example.png"
+    },
+    {
+      "name": "p",
+      "price": "$600,000",
+      "image": "example.png"
+    },
+    {
+      "name": "Q",
+      "price": "$200,000",
+      "image": "example.png"
+    },
+    {
+      "name": "r",
+      "price": "$100,000",
+      "image": "example.png"
+    },
+    {
+      "name": "s",
+      "price": "$300,000",
+      "image": "example.png"
+    },
+    {
+      "name": "t",
+      "price": "$500,000",
+      "image": "example.png"
+    }
+  ]
+}
