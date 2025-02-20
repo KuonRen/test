@@ -116,7 +116,7 @@ body {
 .catalog {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* 中央揃え */
     padding: 20px;
     max-width: 1000px;
     margin: auto;
@@ -184,11 +184,12 @@ body {
         gap: 15px; /* ボタン間の間隔を調整 */
     }
     .catalog {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center; /* カーアイテムを中央揃え */
+        padding: 15px; /* スペース調整 */
     }
     .car-item {
         width: 90%;
-        max-width: 350px;
+        max-width: 350px; /* アイテムの最大幅を調整 */
+        margin: 15px auto; /* 中央に揃えるために自動マージン */
     }
 }
