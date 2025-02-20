@@ -56,13 +56,20 @@ body {
     flex-wrap: wrap;
 }
 
-.search-container input, .sort-container button {
+.search-container input, .sort-container button, .search-container button {
     padding: 12px;
     border-radius: 8px;
     border: none;
     font-size: 1rem;
     background-color: #222;
     color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-container button:hover, .sort-container button:hover {
+    background: linear-gradient(135deg, #999, #666);
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
 }
 
 .catalog {
@@ -115,7 +122,11 @@ body {
         max-width: 300px;
         font-size: 1rem;
     }
-    .search-container {
+    .search-container, .sort-container {
+        width: 100%;
+        max-width: 300px;
+    }
+    .search-container input, .search-container button, .sort-container button {
         width: 100%;
         max-width: 300px;
     }
@@ -135,6 +146,10 @@ body {
         padding: 8px;
     }
     .search-container, .sort-container {
+        width: 100%;
+        max-width: 300px;
+    }
+    .search-container input, .search-container button, .sort-container button {
         width: 100%;
         max-width: 300px;
     }
