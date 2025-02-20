@@ -116,9 +116,9 @@ body {
 .catalog {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* 中央揃え */
+    justify-content: space-between; /* 横並びのスペースを均等に */
     padding: 20px;
-    max-width: 1000px;
+    max-width: 100%; /* 100%幅を確保 */
     margin: auto;
 }
 
@@ -127,8 +127,8 @@ body {
     border-radius: 15px;
     margin: 15px;
     padding: 15px;
-    width: 100%;
-    max-width: 300px;
+    width: 23%; /* 横に4つ並ぶように幅を調整 */
+    max-width: 300px; /* 最大幅を300pxに制限 */
     text-align: center;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out;
