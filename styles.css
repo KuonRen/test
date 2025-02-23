@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row; /* 横並びにする */
+    flex-direction: row;
 }
 
 .header {
@@ -18,7 +18,23 @@ body {
     background: linear-gradient(135deg, #555, #222);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     color: #d48fff;
-    width: 100%; /* ヘッダーを全幅に */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-toggle {
+    background: transparent;
+    border: none;
+    color: #d48fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    transform: scale(1.2);
 }
 
 .sidebar {
@@ -26,6 +42,15 @@ body {
     background-color: #1a1a1a;
     padding: 15px;
     box-shadow: 4px 0 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    transition: left 0.3s ease;
+}
+
+.sidebar.open {
+    left: 0;
 }
 
 .category-buttons {
@@ -62,6 +87,12 @@ body {
     flex: 1;
     padding: 20px;
     width: 100%;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content.shifted {
+    margin-left: 250px;
 }
 
 .search-container {
@@ -184,6 +215,8 @@ body {
     .sidebar {
         width: 100%;
         padding: 10px;
+        position: relative;
+        top: auto;
     }
 
     .main-content {
@@ -194,7 +227,7 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .category-buttons button {
         width: 100%;
         max-width: 300px;
