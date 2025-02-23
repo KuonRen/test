@@ -1,10 +1,3 @@
-// サイドバーの開閉を切り替える関数
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('open');
-}
-
-// 既存の車両データ関連のコードはそのまま
 let carsData = {}; // JSONデータを保持する変数
 let sortMode = "name"; // デフォルトの並び順（A-Z）
 let orderMode = "asc"; // デフォルトの昇順
