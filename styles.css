@@ -4,9 +4,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
     color: #fff;
-    text-align: center;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row; /* 横並びにする */
 }
 
 .header {
@@ -17,13 +18,21 @@ body {
     background: linear-gradient(135deg, #555, #222);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     color: #d48fff;
+    width: 100%; /* ヘッダーを全幅に */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .category-buttons {
     margin: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .category-buttons button {
@@ -47,6 +56,12 @@ body {
 .category-buttons button.active {
     background: linear-gradient(135deg, rgba(212, 143, 255, 0.4), rgba(212, 143, 255, 0.3));
     transform: scale(1.08);
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
 }
 
 .search-container {
@@ -93,7 +108,6 @@ body {
     align-items: center;
     gap: 20px;
     padding-bottom: 10px;
-    width: 100%;
 }
 
 .sort-container button {
@@ -134,6 +148,10 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+.car-item:hover {
+    transform: scale(1.05);
+}
+
 .car-item img {
     width: 100%;
     border-radius: 15px;
@@ -158,61 +176,27 @@ body {
     letter-spacing: 1px;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    padding-top: 60px;
-    transition: left 0.3s ease;
-    z-index: 1000;
-}
-
-.sidebar.active {
-    left: 0;
-}
-
-.toggle-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    z-index: 1100;
-}
-
 @media (max-width: 768px) {
-    .header {
-        font-size: 2rem;
+    body {
+        flex-direction: column; /* サイドバーを上にする */
+    }
+
+    .sidebar {
+        width: 100%;
         padding: 10px;
     }
+
+    .main-content {
+        width: 100%;
+    }
+
     .category-buttons {
         flex-direction: column;
         align-items: center;
     }
+    
     .category-buttons button {
         width: 100%;
         max-width: 300px;
-        font-size: 1rem;
-    }
-    .search-container {
-        width: 90%;
-        max-width: 400px;
-    }
-    .sort-container {
-        gap: 15px;
-    }
-    .catalog {
-        padding: 15px;
-    }
-    .car-item {
-        width: 90%;
-        max-width: 350px;
-        margin: 15px auto;
     }
 }
