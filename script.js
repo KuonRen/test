@@ -1,3 +1,10 @@
+// サイドバーの開閉を切り替える関数
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('open');
+}
+
+// 既存の車両データ関連のコードはそのまま
 let carsData = {}; // JSONデータを保持する変数
 let sortMode = "name"; // デフォルトの並び順（A-Z）
 let orderMode = "asc"; // デフォルトの昇順
@@ -145,29 +152,4 @@ window.onload = function() {
     loadCarsData();
     const sportsButton = document.querySelector("button[onclick=\"showCategory('sports', this)\"]");
     showCategory('sports', sportsButton);
-}
-
-//サイドバー
-function toggleSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.classList.toggle('active');
-        }
-
-// サイドバーを開け閉めする関数
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const mainContent = document.querySelector('.main-content');
-    sidebar.classList.toggle('open');
-    mainContent.classList.toggle('shifted');
-}
-
-// カテゴリー表示切り替え
-function showCategory(category, button) {
-    const allCategories = document.querySelectorAll('.catalog');
-    allCategories.forEach(cat => cat.style.display = 'none');
-    document.getElementById(category).style.display = 'block';
-
-    const buttons = document.querySelectorAll('.category-buttons button');
-    buttons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
 }
