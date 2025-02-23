@@ -1,112 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap');
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+/* サイドバーのスタイル */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    transform: translateX(-250px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    padding-top: 20px;
     display: flex;
-    flex-direction: row;
-}
-
-.header {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding: 15px;
-    background: linear-gradient(135deg, #555, #222);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    color: #d48fff;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
+.sidebar.open {
+    transform: translateX(0);
+}
+
 .sidebar-toggle {
-    background: transparent;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background: #444;
+    color: white;
     border: none;
-    color: #d48fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
 }
 
 .sidebar-toggle:hover {
-    transform: scale(1.2);
+    background: #777;
 }
 
-.sidebar {
-    width: 250px;
-    background-color: #1a1a1a;
-    padding: 15px;
-    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.3);
-    position: fixed;
-    left: -250px;
-    top: 0;
-    height: 100%;
-    transition: left 0.3s ease;
-}
-
-.sidebar.open {
-    left: 0;
-}
-
-.category-buttons {
-    margin: 10px;
+.sidebar-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
 }
 
-.category-buttons button {
+.sidebar-content button {
     background: linear-gradient(135deg, #777, #444);
     color: white;
     border: none;
     padding: 12px 20px;
-    margin: 5px;
+    margin: 10px;
     cursor: pointer;
     font-size: 1rem;
+    width: 100%;
     border-radius: 12px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.category-buttons button:hover {
+.sidebar-content button:hover {
     background: linear-gradient(135deg, #999, #666);
     transform: scale(1.08);
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
 }
 
-.category-buttons button.active {
-    background: linear-gradient(135deg, rgba(212, 143, 255, 0.4), rgba(212, 143, 255, 0.3));
-    transform: scale(1.08);
-}
-
-.main-content {
-    flex: 1;
-    padding: 20px;
+.sidebar-content .search-container {
+    margin-top: 20px;
     width: 100%;
-    margin-left: 0;
-    transition: margin-left 0.3s ease;
 }
 
-.main-content.shifted {
-    margin-left: 250px;
-}
-
-.search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 500px;
-    margin: 10px auto;
-    padding-bottom: 10px;
-}
-
-.search-container input {
+.sidebar-content .search-container input {
     padding: 12px;
     flex: 1;
     border-radius: 8px;
@@ -114,9 +77,10 @@ body {
     font-size: 1rem;
     background-color: #222;
     color: white;
+    width: 100%;
 }
 
-.search-container button {
+.sidebar-content .search-container button {
     background: linear-gradient(135deg, #777, #444);
     color: white;
     border: none;
@@ -127,109 +91,19 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.search-container button:hover {
+.sidebar-content .search-container button:hover {
     background: linear-gradient(135deg, #999, #666);
     transform: scale(1.05);
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
 }
 
-.sort-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 10px;
+/* メインコンテンツの余白 */
+.main-content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
 }
 
-.sort-container button {
-    background: linear-gradient(135deg, #777, #444);
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.sort-container button:hover {
-    background: linear-gradient(135deg, #999, #666);
-    transform: scale(1.05);
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
-}
-
-.catalog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.car-item {
-    background: linear-gradient(135deg, #222, #111);
-    border-radius: 15px;
-    margin: 15px;
-    padding: 15px;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.car-item:hover {
-    transform: scale(1.05);
-}
-
-.car-item img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.car-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #d48fff;
-    margin-top: 10px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
-}
-
-.car-price {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    margin-top: 10px;
-    font-weight: 700;
-    color: #FFD700;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-    letter-spacing: 1px;
-}
-
-@media (max-width: 768px) {
-    body {
-        flex-direction: column; /* サイドバーを上にする */
-    }
-
-    .sidebar {
-        width: 100%;
-        padding: 10px;
-        position: relative;
-        top: auto;
-    }
-
-    .main-content {
-        width: 100%;
-    }
-
-    .category-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .category-buttons button {
-        width: 100%;
-        max-width: 300px;
-    }
+/* サイドバーが開いている時にメインコンテンツの位置を調整 */
+.sidebar.open ~ .main-content {
+    margin-left: 0;
 }
