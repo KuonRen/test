@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealer Catalog ~created by Ren~</title>
+
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="header">
-        ∫ HOGTA - Car Dealer ∫
-        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
-    </div>
-
-    <!-- 左サイドバー -->
+    <!-- サイドバー -->
     <div id="sidebar" class="sidebar">
-        <div class="category-buttons">
-            <button onclick="showCategory('sports', this)">スポーツカー</button>
-            <button onclick="showCategory('super', this)">スーパーカー</button>
-            <button onclick="showCategory('bike', this)">バイク</button>
+        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="sidebar-content">
+            <div class="category-buttons">
+                <button onclick="showCategory('sports', this)">スポーツカー</button>
+                <button onclick="showCategory('super', this)">スーパーカー</button>
+                <button onclick="showCategory('bike', this)">バイク</button>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="全車種から車両を検索…">
+                <button onclick="searchCar()">検索</button>
+            </div>
         </div>
     </div>
 
+    <!-- メインコンテンツ -->
     <div class="main-content">
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="全車種から車両を検索…">
-            <button onclick="searchCar()">検索</button>
-        </div>
+        <div class="header">∫ HOGTA - Car Dealer ∫</div>
 
         <div class="sort-container">
             <button id="sortButtonAtoZ" onclick="toggleSort()">A-Z</button>
             <button id="sortButtonPrice" onclick="toggleSort()" style="display: none;">価格</button>
-
             <button id="orderButtonAsc" onclick="toggleOrder()">昇順</button>
             <button id="orderButtonDesc" onclick="toggleOrder()" style="display: none;">降順</button>
         </div>
