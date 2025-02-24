@@ -22,6 +22,26 @@ body {
 }
 
 /*以下メインのスタイル*/
+.category-buttons button {
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #fff;
+    border-top: 4px solid #48ecc4;
+    border-right: 4px solid #0a5f4a;
+    border-bottom: 4px solid #0f745b;
+    border-left: 4px solid #8cf9de;
+    border-radius: 0;
+    background: #11a37f;
+}
+
+.category-buttons button:hover {
+    background: linear-gradient(135deg, #999, #666);
+    transform: scale(1.08);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
 
 /* 以下フッターのスタイル*/
 .footer {
