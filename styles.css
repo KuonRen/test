@@ -72,6 +72,26 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+.search-container input {
+    padding: 12px;
+    flex: 1;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #222;
+    color: white;
+}
+
 /* 以下フッターのスタイル*/
 .footer {
     text-align: center;
