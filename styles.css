@@ -21,10 +21,11 @@ body {
 }
 
 .footer {
-    color: #808080;
-    background: #e5e5e5;
     text-align: center;
     padding: 30px;
+    background: linear-gradient(135deg, #555, #222);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #d48fff;
 }
 .footer a {
     color: #808080;
