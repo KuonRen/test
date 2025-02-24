@@ -25,7 +25,7 @@ body {
     padding: 30px;
     background: linear-gradient(135deg, #555, #222);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    color: #d48fff;
+    color: #ffffff;
 }
 .footer a {
     color: #808080;
@@ -45,7 +45,7 @@ body {
 .footer .menu li {
     margin: 0;
     padding: 0 20px;
-    border-right: 1px #808080 solid;
+    border-right: 1px #ffffff solid;
 }
 .footer .menu li:last-child {
     border: none;
@@ -65,6 +65,6 @@ body {
         border: none;
     }
     .footer .menu li:nth-child(odd) {
-        border-right: 1px #808080 solid;
+        border-right: 1px #ffffff solid;
     }
 }
