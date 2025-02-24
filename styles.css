@@ -85,11 +85,11 @@ body {
 }
 .filter-container select {
     font-family: 'Playfair Display', serif;
-    background: linear-gradient(135deg, #555, #222);
+    background: #121212;
     color: #d1d1d1;
     border: 2px solid #aaa;
-    padding: 10px 15px;
-    font-size: 0.9rem;
+    padding: 6px 12px; /* 高さを小さく調整 */
+    font-size: 0.85rem; /* 少し小さく */
     border-radius: 6px;
     appearance: none;
     cursor: pointer;
@@ -97,23 +97,10 @@ body {
     text-align: center;
     position: relative;
 }
-.filter-container select:focus {
-    outline: none;
-    background: linear-gradient(135deg, #888, #555);
-    box-shadow: 0 0 12px rgba(209, 214, 215, 0.5);
-}
-.filter-container::after {
-    position: absolute;
-    right: 12px;
-    pointer-events: none;
-    font-size: 12px;
-    color: #d1d1d1;
-}
 .filter-container select option {
     background: #111;
     color: #d1d1d1;
 }
-
 
 .sort-container {
     display: flex;
