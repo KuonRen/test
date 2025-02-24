@@ -76,47 +76,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
-    max-width: 500px;
-    margin: 10px auto;
-    padding-bottom: 10px;
+    max-width: 450px;
+    margin: 8px auto;
+    padding-bottom: 8px;
     position: relative;
 }
 .filter-container select {
     font-family: 'Playfair Display', serif;
-    background: linear-gradient(135deg, #777, #444);
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #555, #222);
+    color: #d1d1d1;
+    border: 2px solid #aaa;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 6px;
     appearance: none;
     cursor: pointer;
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
     text-align: center;
+    position: relative;
 }
 .filter-container select:hover {
-    background: linear-gradient(135deg, #999, #666);
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #777, #444);
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+    transform: scale(1.04);
 }
 .filter-container select:focus {
     outline: none;
-    background: linear-gradient(135deg, #aaa, #777);
-    box-shadow: 0 0 10px rgba(209, 214, 215, 0.5);
+    background: linear-gradient(135deg, #888, #555);
+    box-shadow: 0 0 12px rgba(209, 214, 215, 0.5);
 }
 .filter-container::after {
+    content: '▼';
     position: absolute;
-    right: 15px;
+    right: 12px;
     pointer-events: none;
-    font-size: 14px;
-    color: white;
+    font-size: 12px;
+    color: #d1d1d1;
 }
 .filter-container select option {
-    background: #222;
-    color: white;
+    background: #111;
+    color: #d1d1d1;
 }
+
 
 .sort-container {
     display: flex;
