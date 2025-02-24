@@ -20,6 +20,24 @@
         <button onclick="showCategoly('other', this)">Other</button>
       </div>
       <div class="sort-container">
+        <label for="manufacturer">メーカー:</label>
+        <select id="manufacturer">
+          <option value="all">すべてのメーカー</option>
+          <option value="toyota">トヨタ</option>
+          <option value="honda">ホンダ</option>
+          <option value="nissan">日産</option>
+          <option value="mazda">マツダ</option>
+        </select>
+        <br><br>
+    
+        <!-- ドア数選択 -->
+        <label for="doors">ドア数:</label>
+        <select id="doors">
+          <option value="all">すべてのドア数</option>
+          <option value="2">2ドア</option>
+          <option value="4">4ドア</option>
+        </select>
+
         <!-- 並び替えボタン -->
         <button id="sortButtonAtoZ" onclick="toggleSort()">A-Z</button>
         <button id="sortButtonPrice" onclick="toggleSort()" style="display: none;">価格</button>
