@@ -1,6 +1,7 @@
 /* fontのインポート */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap');
 
+/* 以下サイト全体のスタイル */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
@@ -9,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* 以下ヘッダーのスタイル */
 .header {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
@@ -20,6 +21,9 @@ body {
     color: #d48fff;
 }
 
+/*以下メインのスタイル*/
+
+/* 以下フッターのスタイル*/
 .footer {
     text-align: center;
     padding: 30px;
