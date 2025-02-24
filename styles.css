@@ -1,4 +1,4 @@
-/* fontのインポート */
+る/* fontのインポート */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap');
 
 /* 以下サイト全体のスタイル */
@@ -210,6 +210,11 @@ body {
 }
 
 @media only screen and (max-width:599px) {
+    
+    .filter-container {
+        width: 90%;
+        max-width: 400px;
+    }
     
     .search-container {
         width: 90%;
