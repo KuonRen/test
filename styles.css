@@ -210,11 +210,6 @@ body {
 
 @media only screen and (max-width:599px) {
     
-    .filter-container {
-        width: 90%;
-        max-width: 400px;
-    }
-    
     .search-container {
         width: 90%;
         max-width: 400px;
