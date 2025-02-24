@@ -42,6 +42,35 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
+.category-buttons button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110%;
+    height: 110%;
+    background: radial-gradient(circle, rgba(209, 214, 215, 0.3) 0%, rgba(209, 214, 215, 0) 80%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.category-buttons button:hover:before {
+    opacity: 1;
+}
+.category-buttons button:hover {
+    color: #e0e0e0;
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.category-buttons button.active {
+    background: #121212;
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+    transform: scale(1.04);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 /* 以下フッターのスタイル*/
 .footer {
