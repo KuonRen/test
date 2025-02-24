@@ -72,7 +72,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.sort-container {
+.filter-container {
     display: flex;
     justify-content: center; /* 中央揃え */
     align-items: center;
@@ -80,7 +80,7 @@ body {
     padding-bottom: 10px;
     width: 100%; /* 必要に応じて幅を指定 */
 }
-.sort-container button {
+.filter-container button {
     background: linear-gradient(135deg, #777, #444);
     color: white;
     border: none;
@@ -90,7 +90,7 @@ body {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.sort-container button:hover {
+.filter-container button:hover {
     background: linear-gradient(135deg, #999, #666);
     transform: scale(1.05);
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
