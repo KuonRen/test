@@ -80,7 +80,7 @@ body {
     padding-bottom: 10px;
     width: 100%; /* 必要に応じて幅を指定 */
 }
-.filter-container button {
+.filter-container select {
     background: linear-gradient(135deg, #777, #444);
     color: white;
     border: none;
@@ -90,7 +90,7 @@ body {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.filter-container button:hover {
+.filter-container select:hover {
     background: linear-gradient(135deg, #999, #666);
     transform: scale(1.05);
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
