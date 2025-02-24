@@ -103,7 +103,6 @@ body {
     box-shadow: 0 0 12px rgba(209, 214, 215, 0.5);
 }
 .filter-container::after {
-    content: '▼';
     position: absolute;
     right: 12px;
     pointer-events: none;
