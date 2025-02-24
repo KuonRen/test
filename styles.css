@@ -97,11 +97,6 @@ body {
     text-align: center;
     position: relative;
 }
-.filter-container select:hover {
-    background: linear-gradient(135deg, #777, #444);
-    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
-    transform: scale(1.04);
-}
 .filter-container select:focus {
     outline: none;
     background: linear-gradient(135deg, #888, #555);
