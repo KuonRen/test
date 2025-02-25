@@ -118,7 +118,7 @@ function showCategory(category, button) {
 // 検索機能
 function searchCar() {
     let searchQuery = document.getElementById('searchInput').value.toLowerCase();
-    let allCategories = ['sports', 'super', 'bike'];
+    let allCategories = ['sports', 'super', 'bike', 'other'];
     let found = false;
 
     for (let category of allCategories) {
