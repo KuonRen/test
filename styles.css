@@ -93,7 +93,7 @@ body {
 .filter-container select {
     font-family: 'Playfair Display', serif;
     background: #121212;
-    color: #d1d1d1;
+    color: #e0e0e0;
     border: 2px solid #aaa;
     padding: 6px 12px; /* 高さを小さく調整 */
     font-size: 0.85rem; /* 少し小さく */
@@ -106,14 +106,14 @@ body {
 }
 .filter-container select option {
     background: #111;
-    color: #d1d1d1;
+    color: #e0e0e0;
 }
 
 .sort-container button {
     background: #121212;
-    color: #b0b0b0;
+    color: #e0e0e0;
     border-style: solid;
-    border-color: #b0b0b0;
+    border-color: #e0e0e0;
     border-width: 2px;
     padding: 4px 10px; /* さらに小さめに調整 */
     margin: 3px;
@@ -176,7 +176,7 @@ body {
 .search-container button {
     font-family: 'Playfair Display', serif;
     background: #121212;
-    color: #d1d1d1;
+    color: #e0e0e0;
     border: 2px solid #aaa;
     padding: 8px 14px;
     font-size: 0.85rem;
