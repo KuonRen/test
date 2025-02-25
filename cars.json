@@ -104,5 +104,37 @@
       "price": "$500,000",
       "image": "example.png"
     }
+  ],
+  "other": [
+    {
+      "name": "u",
+      "price": "$400,000",
+      "image": "example.png"
+    },
+    {
+      "name": "v",
+      "price": "$600,000",
+      "image": "example.png"
+    },
+    {
+      "name": "w",
+      "price": "$200,000",
+      "image": "example.png"
+    },
+    {
+      "name": "x",
+      "price": "$100,000",
+      "image": "example.png"
+    },
+    {
+      "name": "y",
+      "price": "$300,000",
+      "image": "example.png"
+    },
+    {
+      "name": "z",
+      "price": "$500,000",
+      "image": "example.png"
+    }
   ]
 }
