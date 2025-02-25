@@ -182,6 +182,16 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* 車一覧 */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 中央揃え */
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
 /* 以下フッターのスタイル*/
 .footer {
     text-align: center;
