@@ -23,7 +23,7 @@ body {
 
 /*以下メインのスタイル*/
 .container {
-      width: 1650px; /* 1920pxモニター向けの幅 */
+      width: 1920px; /* 1920pxモニター向けの幅 */
       margin: 0 auto;
       padding: 20px;
     }
