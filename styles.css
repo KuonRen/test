@@ -276,4 +276,13 @@ body {
     .footer .menu li:nth-child(odd) {
         border-right: 1px #ffffff solid;
     }
+    .catalog {
+        justify-content: center; /* カーアイテムを中央揃え */
+        padding: 15px; /* スペース調整 */
+    }
+    .car-item {
+        width: 90%;
+        max-width: 350px; /* アイテムの最大幅を調整 */
+        margin: 15px auto; /* 中央に揃えるために自動マージン */
+    }
 }
