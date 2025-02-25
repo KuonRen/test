@@ -200,8 +200,8 @@ body {
     border-radius: 15px;
     margin: 10px;
     padding: 15px;
-    width: 50%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 500px;
     text-align: center;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
