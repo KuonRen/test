@@ -139,11 +139,6 @@ body {
 .sort-container button:hover:before {
     opacity: 1;
 }
-.sort-container button:hover {
-    color: #e0e0e0;
-    transform: scale(1.04);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 .sort-container button.active {
     background: #121212;
     color: #e0e0e0;
