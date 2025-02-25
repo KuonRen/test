@@ -95,8 +95,8 @@ body {
     background: #121212;
     color: #e0e0e0;
     border: 2px solid #aaa;
-    padding: 6px 12px; /* 高さを小さく調整 */
-    font-size: 0.85rem; /* 少し小さく */
+    padding: 6px 20px;
+    font-size: 0.85rem;
     border-radius: 6px;
     appearance: none;
     cursor: pointer;
