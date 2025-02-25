@@ -120,6 +120,11 @@ body {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+.sort-container button:hover {
+    background: linear-gradient(135deg, #999, #666);
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
 
 .search-container {
     display: flex;
